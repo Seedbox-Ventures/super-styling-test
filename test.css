@@ -1,3 +1,6 @@
+/* @BenGee gerne alles ändern :) */
+
+/* Spacing */
 .super-content { /* pages set to "full-widht" in Notion */
   max-width: 1400px;
   margin: 0 auto;
@@ -15,15 +18,17 @@
   padding-bottom: 0px;
 }
 
-/* @BenGee gerne alles ändern :) */
+/* Hide the last toggle on the page (for hidden pages) */
+.notion-root > .notion-toggle:last-of-type { display:none; }
 
-/*Now some snippets I stole from https://docs.super.so/code-snippets*/
+/* Buttons */
 
-/* Turn a single line callout block into a button (Entire block is clickable) */
+/****DISABLED
+/* stolen from https://docs.super.so/code-snippets *-/
+/* Turn a single line callout block into a button (Entire block is clickable) *-/
  .notion-callout { 
   position: relative!important;
 }
-
 .notion-callout .notion-callout__content:first-of-type > .notion-semantic-string span .notion-link {
   position: absolute!important;
   height: 100%!important;
@@ -36,15 +41,11 @@
   padding-left: 50px!important;
   border: none!important;
 }
+END-DISABLED*/
 
-/*---------  QUOTE/BUTTONS ---------*/
-
-
-
-
+/* Buttons from the Kraft-Theme (rely on quotes instead of callouts) */
 
 .notion-quote {
-  
   padding: 0!important;
   margin: 0px!important;
   display: flex!important;
@@ -62,7 +63,7 @@
   box-shadow: 0px 24px 36px rgba(21, 24, 26, 0.25)!important;
 }
 
-.notion-quote  span {
+.notion-quote span {
   padding:  0px!important;  
   flex: none!important;
   order: 0!important;
@@ -186,5 +187,3 @@
 .notion-quote.bg-red {
   color: #fff!important;
 }
-
-
