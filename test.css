@@ -1,0 +1,190 @@
+.super-content { /* pages set to "full-widht" in Notion */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.super-content.max-width { /* pages NOT set to "full-widht" in Notion */
+  max-width: 900px;
+}
+.super-navbar__content { /*match navbar to content width */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: calc(env(safe-area-inset-left) + 96px);
+  padding-right: calc(env(safe-area-inset-right) + 96px);
+}
+.super-content { /* remove big whitespace at the bottom */
+  padding-bottom: 0px;
+}
+
+/* @BenGee gerne alles ändern :) */
+
+/*Now some snippets I stole from https://docs.super.so/code-snippets*/
+
+/* Turn a single line callout block into a button (Entire block is clickable) */
+ .notion-callout { 
+  position: relative!important;
+}
+
+.notion-callout .notion-callout__content:first-of-type > .notion-semantic-string span .notion-link {
+  position: absolute!important;
+  height: 100%!important;
+  width: 100%!important;
+  top: 0!important;
+  left: 0!important;
+  right: 0!important;
+  bottom: 0!important;
+  padding: var(--callout-padding)!important;
+  padding-left: 50px!important;
+  border: none!important;
+}
+
+/*---------  QUOTE/BUTTONS ---------*/
+
+
+
+
+
+.notion-quote {
+  
+  padding: 0!important;
+  margin: 0px!important;
+  display: flex!important;
+  transition: background 100ms ease-in, box-shadow 100ms ease-in!important;
+  background: rgba(255, 255, 255, 0.75)!important;
+  border: 1px solid rgba(255, 255, 255, 0.1)!important;
+  box-shadow: 0px 16px 36px rgba(21, 24, 26, 0.15)!important;
+  border-radius: 4px!important;
+  font-size: 18px!important;
+}
+
+.notion-quote:hover {
+  background: rgba(255, 255, 255, 0.95)!important;
+  border: 1px solid rgba(255, 255, 255, 0.25)!important;
+  box-shadow: 0px 24px 36px rgba(21, 24, 26, 0.25)!important;
+}
+
+.notion-quote  span {
+  padding:  0px!important;  
+  flex: none!important;
+  order: 0!important;
+  flex-grow: 1!important;
+}
+
+.notion-quote .notion-semantic-string span {
+  padding: 0px!important;  
+  flex: none!important;
+  order: 0!important;
+  flex-grow: 1!important;
+  display: flex!important;
+}
+
+.notion-quote a {
+  padding: 16px 24px!important;
+  border-bottom: none!important;
+  width: 100%!important;
+  text-align: center!important;
+  opacity: 1!important;
+}
+
+.notion-quote.bg-gray {
+  background: #2C393F!important;
+  box-shadow: 0px 16px 36px rgba(21, 24, 26, 0.35)!important;
+}
+
+.notion-quote.bg-gray:hover {
+  background: #404D53!important;
+  box-shadow: 0px 24px 36px rgba(21, 24, 26, 0.35)!important;
+}
+
+.notion-quote.bg-brown {
+  background: #6B432D!important;
+  box-shadow: 0px 16px 36px rgba(37, 17, 6, 0.35)!important;
+}
+
+.notion-quote.bg-brown:hover {
+  background: #7F5741!important;
+  box-shadow: 0px 24px 36px rgba(37, 17, 6, 0.35)!important;
+}
+
+.notion-quote.bg-orange {
+  background: #EB5822!important;
+  box-shadow: 0px 16px 36px rgba(122, 35, 3, 0.35)!important;
+}
+
+.notion-quote.bg-orange:hover {
+  background: #F56C36!important;
+  box-shadow: 0px 24px 36px rgba(122, 35, 3, 0.35)!important;
+}
+
+.notion-quote.bg-yellow {
+  background: #FF9D0A!important;
+  box-shadow: 0px 16px 36px rgba(136, 94, 30, 0.35)!important;
+}
+
+.notion-quote.bg-yellow:hover {
+  background: #FFB11E!important;
+  box-shadow: 0px 24px 36px rgba(136, 94, 30, 0.35)!important;
+}
+
+.notion-quote.bg-green {
+  background: #16A494!important;
+  box-shadow: 0px 16px 36px rgba(28, 61, 55, 0.35)!important;
+}
+
+.notion-quote.bg-green:hover {
+  background: #2AB8A8!important;
+  box-shadow: 0px 24px 36px rgba(28, 61, 55, 0.35)!important;
+}
+
+.notion-quote.bg-blue {
+  background: #3A81EA!important;
+  box-shadow: 0px 16px 36px rgba(42, 70, 125, 0.35)!important;
+}
+
+.notion-quote.bg-blue:hover {
+  background: #4E95FE!important;
+  box-shadow: 0px 24px 36px rgba(42, 70, 125, 0.35)!important;
+}
+
+.notion-quote.bg-purple {
+  background: #926CFF!important;
+  box-shadow: 0px 16px 36px rgba(27, 13, 116, 0.35)!important;
+}
+
+.notion-quote.bg-purple:hover {
+  background: #A680FF!important;
+  box-shadow: 0px 24px 36px rgba(27, 13, 116, 0.35)!important;
+}
+
+.notion-quote.bg-pink {
+  background: #EE4C9A!important;
+  box-shadow: 0px 16px 36px rgba(113, 21, 103, 0.35)!important;
+}
+
+.notion-quote.bg-pink:hover {
+  background: #FF60AE!important;
+  box-shadow: 0px 24px 36px rgba(113, 21, 103, 0.35)!important;
+}
+
+.notion-quote.bg-red {
+  background: #F13C3C!important;
+  box-shadow: 0px 16px 36px rgba(122, 18, 18, 0.35)!important;
+}
+
+.notion-quote.bg-red:hover {
+  background: #FF5050!important;
+  box-shadow: 0px 24px 36px rgba(122, 18, 18, 0.35)!important;
+}
+
+.notion-quote.bg-gray, 
+.notion-quote.bg-brown, 
+.notion-quote.bg-orange, 
+.notion-quote.bg-yellow, 
+.notion-quote.bg-green, 
+.notion-quote.bg-blue, 
+.notion-quote.bg-purple, 
+.notion-quote.bg-pink, 
+.notion-quote.bg-red {
+  color: #fff!important;
+}
+
+
