@@ -137,12 +137,12 @@ END-DISABLED*/
 }
 
 .notion-quote.bg-blue {
-  background: #3A81EA!important;
+  background: #36F!important;
   box-shadow: 0px 16px 36px rgba(42, 70, 125, 0.35)!important;
 }
 
 .notion-quote.bg-blue:hover {
-  background: #4E95FE!important;
+  background: #36F!important;
   box-shadow: 0px 24px 36px rgba(42, 70, 125, 0.35)!important;
 }
 
